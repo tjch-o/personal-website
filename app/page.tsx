@@ -39,7 +39,7 @@ function Home() {
         <div className="flex items-center space-x-16">
           <div className="text-left min-w-max">
             <h1 className="text-4xl font-bold">
-              Hey, I'm <span className="text-white font-bold">Tze Jie.</span>
+              Hey, I&apos;m <span className="text-white font-bold">Tze Jie.</span>
             </h1>
             <h1 className="text-4xl">
               {" "}
