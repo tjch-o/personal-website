@@ -29,7 +29,7 @@ function GrindTogetherCard() {
             <h1 className="text-4xl font-bold mb-4">GrindTogether</h1>
             <h3 className="text-l font-medium">
               {" "}
-              Submission for NUS Orbital Programme 2023.
+              Project for NUS Orbital Programme 2023.
             </h3>
             <h3 className="font-medium mb-4">
               GrindTogether is a full-stack web app that allows NUS students to
