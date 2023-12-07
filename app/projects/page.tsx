@@ -1,6 +1,6 @@
 import NavBar from "@/components/navigation bar/NavBar";
 import GrindTogetherCard from "@/components/projects/grindtogether/GrindTogetherCard";
-import URLShortsCard from "@/components/projects/urlshorts/UrlShortsCard";
+import URLShortsCard from "@/components/projects/urlshorts/URLShortsCard";
 import JobFestGoCard from "@/components/projects/jobfestgo/JobFestGoCard";
 import EtchASketchCard from "@/components/projects/etch-a-sketch/EtchASketchCard";
 
