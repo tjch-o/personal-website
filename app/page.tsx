@@ -6,9 +6,9 @@ import TechStack from "@/components/home/TechStack";
 import Typed from "typed.js";
 
 function Home() {
-  const sentences = ["I aspire to be a", "I aspire to be a", "I am a", "I am a"];
+  const sentences = ["I aspire to be a", "I aspire to be a", "I am a"];
 
-  const wordsWithStyle = ["software engineer.", "full stack web developer.", "problem solver.", "active learner."];
+  const wordsWithStyle = ["software engineer.", "full stack web developer.", "problem solver."];
 
   const element = useRef(null);
 
