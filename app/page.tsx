@@ -33,7 +33,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="h-screen bg-aq-blue">
       <NavBar />
       <div className="flex justify-center p-16 bg-aq-blue">
         <div className="flex items-center space-x-16">
@@ -46,11 +46,11 @@ function Home() {
               <span ref={element} />{" "}
             </h1>
 
-            <p className="text-2xl mt-4 text-yellow-400">
+            <p className="text-2xl mt-4 text-cyan-400">
               {" "}
               I am currently a Year 2 Computer Science student at NUS.
             </p>
-            <p className="text-2xl text-yellow-400">
+            <p className="text-2xl text-cyan-400">
               {" "}
               I am passionate about coding and learning new concepts and technologies.
             </p>

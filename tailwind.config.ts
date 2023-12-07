@@ -18,6 +18,7 @@ const config: Config = {
         'aq-blue': '#4166f5',
         'azure-blue': '#007fff',
         'navy-blue': '#000080',
+        'rhino-blue': '#2b2e63',
       }
     },
   },

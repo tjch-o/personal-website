@@ -7,7 +7,7 @@ import "./education.css"
 
 function Education() {
   return (
-    <div className="bg-navy-blue">
+    <div className="bg-rhino-blue">
         <NavBar/>
         <Timeline/>
     </div>

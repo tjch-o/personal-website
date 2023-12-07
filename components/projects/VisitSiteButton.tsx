@@ -1,22 +1,25 @@
 import React from "react"
 import Button from "@mui/material/Button"
-import { FaGithub } from "react-icons/fa"
 
-function VisitGithubButton() {
+interface VisitSiteButtonProps {
+    href: string;
+}
+
+function VisitSiteButton({href}: VisitSiteButtonProps) {
     return (
         <div className="mb-16">
             <Button
                 variant="contained"
                 size="large"   
-                href="https://glittery-pastelito-97d2c4.netlify.app/"
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                sx={{backgroundColor: "#c19a6b", color: "#fff"}}
+                sx={{backgroundColor: "#c19a6b", "text-transform": "none", fontSize: "18px"}}
                 >
-                Try out GrindTogether
+                Visit website
                 </Button>
         </div>
     )
 }
 
-export default VisitGithubButton
+export default VisitSiteButton

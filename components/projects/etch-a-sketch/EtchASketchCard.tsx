@@ -1,12 +1,12 @@
 import React from "react";
-import GrindTogetherTechUsedCard from "./GrindTogetherTechUsedCard";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import VisitGithubButton from "../VisitGithubButton";
 import VisitSiteButton from "../VisitSiteButton";
+import EtchASketchTechUsedCard from "./EtchASketchTechUsedCard";
 
-function GrindTogetherCard() {
+function EtchASketchCard() {
   return (
     <div>
       <Card
@@ -20,27 +20,25 @@ function GrindTogetherCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: 1500, height: "auto", objectFit: "contain" }}
-          image="projects/grindtogether.png"
-          title="GrindTogether"
+          sx={{ width: 780, height: "auto", objectFit: 'contain' }}
+          image="projects/etch-a-sketch.png"
+          title="Etch-A-Sketch"
         />
         <CardContent>
           <div>
-            <h1 className="text-4xl font-bold mb-4">GrindTogether</h1>
+            <h1 className="text-4xl font-bold mb-4">Etch-A-Sketch</h1>
             <h3 className="text-l font-medium">
               {" "}
-              Submission for NUS Orbital Programme 2023.
+              One of my first ever web development projects, done as part of the Odin Project.
             </h3>
             <h3 className="font-medium mb-4">
-              GrindTogether is a full-stack web app that allows NUS students to
-              find study partners by posting study invitations based on modules,
-              faculty and location.
+            Etch-A-Sketch is a website where users can engage in interactive grid-based drawing and colouring experiences using their mouse.
             </h3>
             <div className="flex flex-row space-x-4">
-              <VisitSiteButton href="https://glittery-pastelito-97d2c4.netlify.app/" />
-              <VisitGithubButton href="https://github.com/McNaBry/orbital-grindtogether" />
+              <VisitSiteButton href= "https://htmlpreview.github.io/?https://github.com/tjch-o/the-odin-project/blob/main/odin-etch-a-sketch/index.html" />
+              <VisitGithubButton href="https://github.com/tjch-o/the-odin-project/tree/main/odin-etch-a-sketch" />
             </div>
-            <GrindTogetherTechUsedCard />
+            <EtchASketchTechUsedCard />
           </div>
         </CardContent>
       </Card>
@@ -48,4 +46,4 @@ function GrindTogetherCard() {
   );
 }
 
-export default GrindTogetherCard;
+export default EtchASketchCard;

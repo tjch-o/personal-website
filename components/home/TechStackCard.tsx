@@ -32,7 +32,7 @@ const techStack = [
   {
     name: "HTML",
     src: "home/html.svg",
-    alt: "HTML",
+    alt: "HTML5",
     url: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
   },
   {
@@ -120,7 +120,7 @@ function TechStackCard() {
       <Box className="my-4" sx={{ minWidth: 750 }}>
         <Card
           variant="outlined"
-          sx={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}
+          sx={{ boxShadow: "0 4px 8px rgba(255, 255, 255, 0.5)" }}
         >
           {card}
         </Card>

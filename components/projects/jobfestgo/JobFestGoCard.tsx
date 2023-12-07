@@ -1,12 +1,11 @@
 import React from "react";
-import GrindTogetherTechUsedCard from "./GrindTogetherTechUsedCard";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import VisitGithubButton from "../VisitGithubButton";
-import VisitSiteButton from "../VisitSiteButton";
+import JobFestGoTechUsedCard from "./JobFestGoTechUsedCard";
 
-function GrindTogetherCard() {
+function JobFestGoCard() {
   return (
     <div>
       <Card
@@ -20,27 +19,28 @@ function GrindTogetherCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: 1500, height: "auto", objectFit: "contain" }}
-          image="projects/grindtogether.png"
-          title="GrindTogether"
+          sx={{ width: 2550, height: "auto", objectFit: "contain" }}
+          image="projects/jobfestgo.png"
+          title="JobFestGo"
         />
         <CardContent>
           <div>
-            <h1 className="text-4xl font-bold mb-4">GrindTogether</h1>
+            <h1 className="text-4xl font-bold mb-4">JobFestGo</h1>
             <h3 className="text-l font-medium">
               {" "}
-              Submission for NUS Orbital Programme 2023.
+              Team project for NUS CS2103T Software Engineering.
             </h3>
             <h3 className="font-medium mb-4">
-              GrindTogether is a full-stack web app that allows NUS students to
-              find study partners by posting study invitations based on modules,
-              faculty and location.
+              JobFestGo is a command-line (CLI) desktop application built for
+              job festival event planners in Singapore to manage contacts and
+              tasks for their events. Written in Object-Oriented Programming
+              (OOP) fashion, the application follows software engineering
+              principles.
             </h3>
             <div className="flex flex-row space-x-4">
-              <VisitSiteButton href="https://glittery-pastelito-97d2c4.netlify.app/" />
-              <VisitGithubButton href="https://github.com/McNaBry/orbital-grindtogether" />
+              <VisitGithubButton href="https://github.com/AY2324S1-CS2103T-T09-1/tp" />
             </div>
-            <GrindTogetherTechUsedCard />
+            <JobFestGoTechUsedCard />
           </div>
         </CardContent>
       </Card>
@@ -48,4 +48,4 @@ function GrindTogetherCard() {
   );
 }
 
-export default GrindTogetherCard;
+export default JobFestGoCard;
