@@ -33,7 +33,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="h-screen bg-aq-blue">
+    <div className="h-screen overflow-auto bg-aq-blue">
       <NavBar />
       <div className="flex justify-center p-16 bg-aq-blue">
         <div className="flex items-center space-x-16">
@@ -52,7 +52,7 @@ function Home() {
             </p>
             <p className="text-2xl text-cyan-400">
               {" "}
-              I am passionate about coding and learning new concepts and technologies.
+              I am passionate about programming and learning new technologies.
             </p>
           </div>
           <Image
