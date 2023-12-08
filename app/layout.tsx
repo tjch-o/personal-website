@@ -17,7 +17,6 @@ export default function RootLayout({
  return (
    <html lang="en">
      <Head>
-       <title>{metadata.title}</title>
        <meta charSet="utf-8" />
        <meta rel="icon" href="/favicon.ico" />
      </Head>
