@@ -18,7 +18,7 @@ export default function RootLayout({
    <html lang="en">
      <Head>
        <meta charSet="utf-8" />
-       <meta rel="icon" href="/favicon.ico" />
+       <meta rel="icon" ref="/favicon.ico" />
      </Head>
      <body>{children}</body>
    </html>
