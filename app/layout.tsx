@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 // These styles apply to every route in the application
@@ -18,7 +19,7 @@ export default function RootLayout({
    <html lang="en">
      <Head>
        <meta charSet="utf-8" />
-       <meta rel="icon" ref="/favicon.ico" />
+       <link rel="icon" href="/favicon.ico" />
      </Head>
      <body>{children}</body>
    </html>
