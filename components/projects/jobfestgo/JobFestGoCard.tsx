@@ -19,7 +19,7 @@ function JobFestGoCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: 2550, height: "auto", objectFit: "contain" }}
+          sx={{ width: 2550, height: "auto", objectFit: "contain", borderRadius: "10px" }}
           image="projects/jobfestgo.png"
           title="JobFestGo"
         />

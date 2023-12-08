@@ -20,7 +20,7 @@ function EtchASketchCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: 780, height: "auto", objectFit: "contain" }}
+          sx={{ width: 780, height: "auto", objectFit: "contain", borderRadius: "10px" }}
           image="projects/etch-a-sketch.png"
           title="Etch-A-Sketch"
         />
