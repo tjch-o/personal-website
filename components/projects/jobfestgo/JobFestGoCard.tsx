@@ -20,7 +20,7 @@ function JobFestGoCard() {
       >
         <CardMedia
           sx={{
-            width: 3000,
+            minWidth: 825,
             height: "auto",
             objectFit: "contain",
             borderRadius: "10px",

@@ -20,7 +20,7 @@ function GrindTogetherCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: "100%", height: "auto", objectFit: "contain", borderRadius: "10px" }}
+          sx={{ minWidth: 750, height: "auto", objectFit: "contain", borderRadius: "10px" }}
           image="projects/grindtogether.png"
           title="GrindTogether"
         />
