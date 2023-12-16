@@ -20,7 +20,7 @@ function URLShortsCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: 720, height: "auto", objectFit: "contain", borderRadius: "10px" }}
+          sx={{ width: "100%", height: "auto", objectFit: "contain", borderRadius: "10px" }}
           image="projects/urlshorts.png"
           title="URLShorts"
         />
@@ -29,7 +29,7 @@ function URLShortsCard() {
             <h1 className="text-4xl font-bold mb-4">URLShorts</h1>
             <h3 className="text-l font-medium">
               {" "}
-              A project aimed at replicating the functionality of TinyURL.
+              A pet project aimed at replicating the functionality of TinyURL.
             </h3>
             <h3 className="font-medium mb-4">
               URLShorts is a simple full-stack web app that provides short and

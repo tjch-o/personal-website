@@ -94,7 +94,7 @@ const techStack = [
 
 const card = (
   <React.Fragment>
-    <CardContent className="flex flex-row flex-wrap space-x-4">
+    <CardContent className="flex flex-row flex-wrap space-x-4 mx-8">
       {techStack.map((tech) => (
         <a
           key={tech.name}
