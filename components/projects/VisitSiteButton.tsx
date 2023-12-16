@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "@mui/material/Button"
+import { FaGlobeAmericas } from "react-icons/fa"
 
 interface VisitSiteButtonProps {
     href: string;
@@ -10,7 +11,8 @@ function VisitSiteButton({href}: VisitSiteButtonProps) {
         <div className="mb-16">
             <Button
                 variant="contained"
-                size="large"   
+                size="large"
+                startIcon={<FaGlobeAmericas />}   
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"

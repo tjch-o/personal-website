@@ -20,7 +20,7 @@ function URLShortsCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: 780, height: "auto", objectFit: "contain", borderRadius: "10px" }}
+          sx={{ width: 720, height: "auto", objectFit: "contain", borderRadius: "10px" }}
           image="projects/urlshorts.png"
           title="URLShorts"
         />

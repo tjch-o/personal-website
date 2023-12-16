@@ -19,7 +19,12 @@ function JobFestGoCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ width: 2250, height: "auto", objectFit: "contain", borderRadius: "10px" }}
+          sx={{
+            width: 1650,
+            height: "auto",
+            objectFit: "contain",
+            borderRadius: "10px",
+          }}
           image="projects/jobfestgo.png"
           title="JobFestGo"
         />
@@ -28,14 +33,16 @@ function JobFestGoCard() {
             <h1 className="text-4xl font-bold mb-4">JobFestGo</h1>
             <h3 className="text-l font-medium">
               {" "}
-              Team project for NUS CS2103T Software Engineering.
+              Team project for NUS CS2103T Software Engineering module which I
+              developed UI related features for better user experience.
             </h3>
             <h3 className="font-medium mb-4">
               JobFestGo is a command-line (CLI) desktop application built for
               job festival event planners in Singapore to manage contacts and
               tasks for their events. Written in Object-Oriented Programming
               (OOP) fashion, the application follows software engineering
-              principles.
+              principles such as software testing and written code following
+              Java coding standards.
             </h3>
             <div className="flex flex-row space-x-4">
               <VisitGithubButton href="https://github.com/AY2324S1-CS2103T-T09-1/tp" />
