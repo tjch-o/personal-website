@@ -20,20 +20,26 @@ function URLShortsCard() {
         className="flex justify-center align-center space-x-4 p-6"
       >
         <CardMedia
-          sx={{ minWidth: 750, height: "auto", objectFit: "contain", borderRadius: "10px" }}
+          sx={{
+            minWidth: 750,
+            height: "auto",
+            objectFit: "contain",
+            borderRadius: "10px",
+          }}
           image="projects/urlshorts.png"
           title="URLShorts"
         />
         <CardContent>
           <div>
             <h1 className="text-4xl font-bold mb-4">URLShorts</h1>
-            <h3 className="text-l font-medium">
-              {" "}
-              A pet project aimed at replicating the functionality of TinyURL.
-            </h3>
             <h3 className="font-medium mb-4">
-              URLShorts is a simple full-stack web app that provides short and
-              concise URLs for users to share with their friends.
+              A simple full-stack web app that provides short and concise URLs
+              for users to share with their friends.
+            </h3>
+            <h3 className="text-l font-medium mb-4">
+              {" "}
+              Pet project inspired by and aimed at replicating the functionality
+              of popular URL shorteners such as TinyURL and bit.ly.
             </h3>
             <div className="flex flex-row space-x-4">
               <VisitSiteButton href="https://tangerine-druid-c2be4c.netlify.app/" />

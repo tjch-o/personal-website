@@ -31,18 +31,17 @@ function JobFestGoCard() {
         <CardContent>
           <div>
             <h1 className="text-4xl font-bold mb-4">JobFestGo</h1>
-            <h3 className="text-l font-medium">
-              {" "}
-              Team project for NUS CS2103T Software Engineering module which I
-              developed UI related features for better user experience.
-            </h3>
             <h3 className="font-medium mb-4">
-              JobFestGo is a command-line (CLI) desktop application built for
+              A command-line (CLI) desktop application built for
               job festival event planners in Singapore to manage contacts and
               tasks for their events. Written in Object-Oriented Programming
               (OOP) fashion, the application follows software engineering
-              principles such as software testing and written code following
-              Java coding standards.
+              principles such as software testing and improved code quality.
+            </h3>
+            <h3 className="text-l font-medium mb-4">
+              {" "}
+              Team project for NUS CS2103T Software Engineering module which I
+              developed UI related features for better user experience.
             </h3>
             <div className="flex flex-row space-x-4">
               <VisitGithubButton href="https://github.com/AY2324S1-CS2103T-T09-1/tp" />

@@ -1,12 +1,11 @@
 import React from "react";
-import GrindTogetherTechUsedCard from "./GrindTogetherTechUsedCard";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import VisitGithubButton from "../VisitGithubButton";
-import VisitSiteButton from "../VisitSiteButton";
+import FilterNewsBotTechUsedCard from "./FilterNewsBotTechUsedCard";
 
-function GrindTogetherCard() {
+function FilterNewsBotCard() {
   return (
     <div>
       <Card
@@ -21,32 +20,31 @@ function GrindTogetherCard() {
       >
         <CardMedia
           sx={{
-            minWidth: 750,
+            minWidth: 600,
+            minHeight: 600,
             height: "auto",
             objectFit: "contain",
             borderRadius: "10px",
           }}
-          image="projects/grindtogether.png"
-          title="GrindTogether"
+          image="projects/filternewsbot.png"
+          title="Filter-News-Bot"
         />
         <CardContent>
           <div>
-            <h1 className="text-4xl font-bold mb-4">GrindTogether</h1>
+            <h1 className="text-4xl font-bold mb-4">Filter-News-Bot</h1>
             <h3 className="font-medium mb-4">
-              A full-stack web app that allows NUS students to find study
-              partners by posting study invitations based on modules, faculty
-              and location. Design of the frontend is inspired by popular social
-              media platforms such as Facebook and Instagram.
+              A Telegram bot that enables users to customise their news feed by
+              filtering out news articles with parameters of their choice, such
+              as keywords, news sources, and news categories.
             </h3>
             <h3 className="text-l font-medium mb-4">
               {" "}
-              Project for NUS Orbital Programme 2023.
+              The very first Telegram bot I have written.
             </h3>
             <div className="flex flex-row space-x-4">
-              <VisitSiteButton href="https://glittery-pastelito-97d2c4.netlify.app/" />
-              <VisitGithubButton href="https://github.com/McNaBry/orbital-grindtogether" />
+              <VisitGithubButton href="https://github.com/tjch-o/filter-news-bot" />
             </div>
-            <GrindTogetherTechUsedCard />
+            <FilterNewsBotTechUsedCard />
           </div>
         </CardContent>
       </Card>
@@ -54,4 +52,4 @@ function GrindTogetherCard() {
   );
 }
 
-export default GrindTogetherCard;
+export default FilterNewsBotCard;
