@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useRef } from "react";
 import NavBar from "@/components/navigation bar/NavBar";
 import Image from "next/image";
@@ -8,7 +9,11 @@ import Typed from "typed.js";
 function Home() {
   const sentences = ["I aspire to be a", "I aspire to be a", "I am a"];
 
-  const wordsWithStyle = ["software engineer.", "full stack web developer.", "problem solver."];
+  const wordsWithStyle = [
+    "software engineer.",
+    "full stack web developer.",
+    "problem solver.",
+  ];
 
   const element = useRef(null);
 
@@ -39,18 +44,19 @@ function Home() {
         <div className="flex items-center space-x-16">
           <div className="text-left min-w-max">
             <h1 className="text-4xl font-bold">
-              Hey, I&apos;m <span className="text-white font-bold">Tze Jie.</span>
+              Hey, I&apos;m{" "}
+              <span className="text-white font-bold">Tze Jie.</span>
             </h1>
             <h1 className="text-4xl">
               {" "}
               <span ref={element} />{" "}
             </h1>
 
-            <p className="text-2xl mt-4 text-cyan-400">
+            <p className="text-2xl mt-4 text-orange-300">
               {" "}
               I am currently a Year 2 Computer Science student at NUS.
             </p>
-            <p className="text-2xl text-cyan-400">
+            <p className="text-2xl text-orange-300">
               {" "}
               I am passionate about programming and learning new technologies.
             </p>

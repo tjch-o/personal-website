@@ -44,7 +44,7 @@ function GrindTogetherCard() {
             </h3>
             <div className="flex flex-row space-x-4">
               <VisitSiteButton href="https://glittery-pastelito-97d2c4.netlify.app/" />
-              <VisitGithubButton href="https://github.com/McNaBry/orbital-grindtogether" />
+              <VisitGithubButton href="https://github.com/tjch-o/orbital-grindtogether" />
             </div>
             <GrindTogetherTechUsedCard />
           </div>
