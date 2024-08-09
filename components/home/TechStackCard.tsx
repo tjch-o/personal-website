@@ -99,36 +99,36 @@ const techStack = [
     { name: 'Linux', src: 'home/linux.svg', alt: 'Git', url: 'https://www.linux.org/' },
     { name: 'NumPy', src: 'home/numpy.svg', alt: 'NumPy', url: 'https://numpy.org/' },
     { name: 'Pandas', src: 'home/pandas.svg', alt: 'Pandas', url: 'https://pandas.pydata.org/' },
-    { name: 'Pytorch', src: 'home/pytorch.svg', alt: 'Pytorch', url: 'https://pytorch.org/' }
+    { name: 'Pytorch', src: 'home/pytorch.svg', alt: 'Pytorch', url: 'https://pytorch.org/' },
 ];
 
 const card = (
-  <React.Fragment>
-      <CardContent className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 mx-8">
-          {techStack.map((tech) => (
-              <a key={tech.name} href={tech.url} target="_blank" rel="noopener noreferrer">
-                  <Image
-                      src={`home/${tech.name.toLowerCase()}.svg`}
-                      alt={tech.name}
-                      width={100}
-                      height={100}
-                  />
-              </a>
-          ))}
-      </CardContent>
-  </React.Fragment>
+    <React.Fragment>
+        <CardContent className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 mx-8">
+            {techStack.map((tech) => (
+                <a key={tech.name} href={tech.url} target="_blank" rel="noopener noreferrer">
+                    <Image
+                        src={`home/${tech.name.toLowerCase()}.svg`}
+                        alt={tech.name}
+                        width={100}
+                        height={100}
+                    />
+                </a>
+            ))}
+        </CardContent>
+    </React.Fragment>
 );
 
 function TechStackCard() {
-  return (
-      <div className="flex justify-center">
-          <Box className="my-4" sx={{ minWidth: '80%' }}>
-              <Card variant="outlined" sx={{ boxShadow: '0 4px 8px rgba(255, 255, 255, 0.5)' }}>
-                  {card}
-              </Card>
-          </Box>
-      </div>
-  );
+    return (
+        <div className="flex justify-center">
+            <Box className="my-4" sx={{ minWidth: '80%' }}>
+                <Card variant="outlined" sx={{ boxShadow: '0 4px 8px rgba(255, 255, 255, 0.5)' }}>
+                    {card}
+                </Card>
+            </Box>
+        </div>
+    );
 }
 
 export default TechStackCard;

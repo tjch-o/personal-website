@@ -13,12 +13,18 @@ const config: Config = {
                 'gradient-conic':
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
+            colors: {
+                'tokyo-night': '#6962d2',
+                'tokyo-night-light': '#989eec',
+            },
             backgroundColor: {
                 'royal-blue': '#4169e1',
                 'aq-blue': '#4166f5',
                 'azure-blue': '#007fff',
                 'navy-blue': '#000080',
                 'rhino-blue': '#2b2e63',
+                'tokyo-night': '#23283B',
+                'tokyo-night-light': '#8482e6',
             },
         },
     },

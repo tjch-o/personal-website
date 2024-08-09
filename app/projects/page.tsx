@@ -5,7 +5,7 @@ import FilterNewsBotCard from '@/components/projects/filternewsbot/FilterNewsBot
 
 function Projects() {
     return (
-        <div className="h-screen overflow-auto bg-aq-blue">
+        <div className="h-screen overflow-auto bg-tokyo-night">
             <NavBar />
             <div className="flex flex-col justify-center m-16 space-y-16">
                 <GrindTogetherCard />

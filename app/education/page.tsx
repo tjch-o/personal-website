@@ -7,7 +7,7 @@ import './education.css';
 
 function Education() {
     return (
-        <div className="bg-rhino-blue">
+        <div className="bg-tokyo-night">
             <NavBar />
             <Timeline />
         </div>

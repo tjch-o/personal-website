@@ -17,7 +17,7 @@ function Home() {
         const options = {
             strings: sentences.map(
                 (sentence, index) =>
-                    `${sentence} <span class="text-white font-bold"> ${wordsWithStyle[index]}</span>`
+                    `${sentence} <span class="text-tokyo-night-light font-bold"> ${wordsWithStyle[index]}</span>`
             ),
             typeSpeed: 40,
             fadeOut: true,
@@ -34,35 +34,35 @@ function Home() {
     }, []);
 
     return (
-        <div className="h-screen overflow-auto bg-aq-blue">
+        <div className="h-screen overflow-auto bg-tokyo-night">
             <NavBar />
-            <div className="flex justify-center p-16 bg-aq-blue">
-                <div className="flex items-center space-x-16">
-                    <div className="text-left min-w-max">
-                        <h1 className="text-4xl font-bold">
-                            Hey, I&apos;m <span className="text-white font-bold">Tze Jie.</span>
+            <div className="flex justify-center p-8 bg-tokyo-night">
+                <div className="flex items-center space-x-16 max-w-7xl">
+                    <div className="text-left flex-1 min-w-0">
+                        <h1 className="text-4xl text-tokyo-night font-bold">
+                            Hey, I&apos;m{' '}
+                            <span className="text-tokyo-night-light font-bold">Tze Jie.</span>
                         </h1>
-                        <h1 className="text-4xl">
+                        <h1 className="text-4xl text-tokyo-night">
                             {' '}
                             <span ref={element} />{' '}
                         </h1>
 
-                        <p className="text-2xl mt-4 text-orange-300">
+                        <p className="text-2xl mt-4 text-tokyo-night break-words">
                             {' '}
-                            I am currently a Year 2 Computer Science student at NUS.
-                        </p>
-                        <p className="text-2xl text-orange-300">
-                            {' '}
-                            I am passionate about programming and learning new technologies.
+                            I am currently a Year 3 Computer Science student at NUS. I am passionate
+                            about software engineering and cybersecurity.
                         </p>
                     </div>
-                    <Image
-                        src="/tjch-o.png"
-                        alt="Me"
-                        width={500}
-                        height={500}
-                        className="rounded-lg"
-                    />
+                    <div className="flex-shrink-0">
+                        <Image
+                            src="/tjch-o.jpg"
+                            alt="Me"
+                            width={500}
+                            height={500}
+                            className="rounded-lg"
+                        />
+                    </div>
                 </div>
             </div>
             <TechStack />
