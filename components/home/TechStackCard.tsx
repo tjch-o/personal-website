@@ -54,10 +54,10 @@ const techStack = [
         url: 'https://reactjs.org/',
     },
     {
-        name: 'Bootstrap',
-        src: 'home/bootstrap.svg',
-        alt: 'Bootstrap',
-        url: 'https://getbootstrap.com/',
+        name: 'TailwindCSS',
+        src: 'home/tailwindcss.svg',
+        alt: 'Tailwind',
+        url: 'https://tailwindcss.com/',
     },
     {
         name: 'NextJs',
