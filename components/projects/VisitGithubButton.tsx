@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '@mui/material/Button';
 import { FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
 
 interface VisitGithubButtonProps {
     href: string;
@@ -9,25 +9,9 @@ interface VisitGithubButtonProps {
 function VisitGithubButton({ href }: VisitGithubButtonProps) {
     return (
         <div className="mb-16">
-            <Button
-                variant="contained"
-                size="large"
-                startIcon={<FaGithub />}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                    backgroundColor: '#9146ff',
-                    'text-transform': 'none',
-                    fontSize: '18px',
-                    '&:hover': {
-                        backgroundColor: '#fde992',
-                        color: '#af9e8e',
-                    },
-                }}
-            >
-                Visit Github
-            </Button>
+            <Link href={href}>
+                <FaGithub className="text-4xl text-tokyo-night-light" />
+            </Link>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import { FaGlobeAmericas } from 'react-icons/fa';
+import Link from 'next/link';
 
 interface VisitSiteButtonProps {
     href: string;
@@ -9,25 +10,9 @@ interface VisitSiteButtonProps {
 function VisitSiteButton({ href }: VisitSiteButtonProps) {
     return (
         <div className="mb-16">
-            <Button
-                variant="contained"
-                size="large"
-                startIcon={<FaGlobeAmericas />}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                    backgroundColor: '#603fef',
-                    'text-transform': 'none',
-                    fontSize: '18px',
-                    '&:hover': {
-                        backgroundColor: '#fde992',
-                        color: '#af9e8e',
-                    },
-                }}
-            >
-                Visit Website
-            </Button>
+            <Link href={href}>
+                <FaGlobeAmericas className="text-4xl text-tokyo-night-light" />
+            </Link>
         </div>
     );
 }

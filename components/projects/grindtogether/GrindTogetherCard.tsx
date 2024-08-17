@@ -43,8 +43,8 @@ function GrindTogetherCard() {
                             Project for NUS Orbital Programme 2023.
                         </h3>
                         <div className="flex flex-row space-x-4">
-                            <VisitSiteButton href="https://glittery-pastelito-97d2c4.netlify.app/" />
                             <VisitGithubButton href="https://github.com/tjch-o/orbital-grindtogether" />
+                            <VisitSiteButton href="https://glittery-pastelito-97d2c4.netlify.app/" />
                         </div>
                         <GrindTogetherTechUsedCard />
                     </div>
