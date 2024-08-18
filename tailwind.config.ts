@@ -26,6 +26,9 @@ const config: Config = {
                 'tokyo-night': '#23283B',
                 'tokyo-night-light': '#8482e6',
             },
+            listStyleType: {
+                square: 'square',
+            },
         },
     },
     plugins: [],

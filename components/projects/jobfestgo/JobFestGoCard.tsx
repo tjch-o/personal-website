@@ -31,18 +31,23 @@ function JobFestGoCard() {
                 <CardContent>
                     <div>
                         <h1 className="text-4xl font-bold mb-4">JobFestGo</h1>
-                        <h3 className="font-medium mb-4">
+                        <div className="inline-block bg-tokyo-night-light text-white px-3 py-1 my-2 rounded-full">
+                            <h3 className="text-l font-medium">CS2103T</h3>
+                        </div>
+                        <h3 className="font-bold"> What is JobFestGo? </h3>
+                        <h3 className="font-medium my-2">
                             A command-line (CLI) desktop application built for job festival event
                             planners in Singapore to manage contacts and tasks for their events.
-                            Written in Object-Oriented Programming (OOP) fashion, the application
-                            follows software engineering principles such as software testing and
-                            improved code quality.
                         </h3>
-                        <h3 className="text-l font-medium mb-4">
-                            {' '}
-                            Team project for NUS CS2103T Software Engineering module which I
-                            developed UI related features for better user experience.
-                        </h3>
+                        <h3 className="font-bold my-2"> Technical Aspects of JobFestGo </h3>
+                        <ul className="my-2 list-square list-inside">
+                            <li className="text-gray-800 text-base">
+                                Designed using OOP and follows MVC design pattern
+                            </li>
+                            <li className="text-gray-800 text-base mb-4">
+                                Extensive test coverage
+                            </li>
+                        </ul>
                         <div className="flex flex-row space-x-4">
                             <VisitGithubButton href="https://github.com/AY2324S1-CS2103T-T09-1/tp" />
                         </div>

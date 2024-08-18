@@ -10,7 +10,7 @@ function Projects() {
             <div className="flex flex-col justify-center m-16 space-y-16">
                 <GrindTogetherCard />
                 <JobFestGoCard />
-                <FilterNewsBotCard />
+                {/* <FilterNewsBotCard /> */}
             </div>
         </div>
     );
