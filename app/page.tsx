@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import NavBar from '@/components/navigation bar/NavBar';
+import NavBar from '@/components/nav/NavBar';
 import Image from 'next/image';
-import TechStack from '@/components/home/TechStack';
+import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import DotCarousel from '@/components/home/carousel';
 
 function Home() {
     const sentences = ['I aspire to be a', 'I aspire to be a', 'I am a'];
@@ -65,7 +65,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <TechStack />
+            <DotCarousel />
         </div>
     );
 }

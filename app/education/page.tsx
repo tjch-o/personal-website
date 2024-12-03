@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
-import NavBar from '@/components/navigation bar/NavBar';
 import Timeline from '@/components/education/Timeline';
+import NavBar from '@/components/nav/NavBar';
+import React from 'react';
 import './education.css';
 
 function Education() {

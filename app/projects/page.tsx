@@ -1,7 +1,7 @@
-import NavBar from '@/components/navigation bar/NavBar';
+import NavBar from '@/components/nav/NavBar';
+import FilterNewsBotCard from '@/components/projects/filternewsbot/FilterNewsBotCard';
 import GrindTogetherCard from '@/components/projects/grindtogether/GrindTogetherCard';
 import JobFestGoCard from '@/components/projects/jobfestgo/JobFestGoCard';
-import FilterNewsBotCard from '@/components/projects/filternewsbot/FilterNewsBotCard';
 
 function Projects() {
     return (
