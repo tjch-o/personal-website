@@ -6,7 +6,7 @@ import { IoSchool } from 'react-icons/io5';
 
 function Timeline() {
     return (
-        <div>
+        <div className='my-16'>
             <VerticalTimeline lineColor="white">
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -21,7 +21,7 @@ function Timeline() {
                         National University of Singapore (NUS)
                     </h3>
                     <p>
-                        Currently a Year 2 Computer Science student pursuing a Bachelor of Computing
+                        Currently a Year 3 Computer Science student pursuing a Bachelor of Computing
                         in Computer Science with Honours degree.
                     </p>
                 </VerticalTimelineElement>
