@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import SocialMediaButton from './SocialMediaButton';
@@ -16,8 +16,8 @@ function NavBar() {
             </div>
 
             <div className="md:hidden flex items-center">
-                <button 
-                    onClick={() => setIsMenuOpen(!isMenuOpen)} 
+                <button
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
                     className="text-white focus:outline-none"
                 >
                     <span className="block w-6 h-1 bg-white mb-1"></span>
@@ -26,7 +26,7 @@ function NavBar() {
                 </button>
             </div>
 
-            <div 
+            <div
                 className={`
                     absolute top-full left-0 right-0 
                     md:static md:flex 
@@ -39,9 +39,9 @@ function NavBar() {
             >
                 <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
                     {navItems.map((item: string, index: number) => (
-                        <Link 
-                            href={`/${item.toLowerCase()}`} 
-                            key={index} 
+                        <Link
+                            href={`/${item.toLowerCase()}`}
+                            key={index}
                             className="text-white hover:text-gray-300 transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                         >

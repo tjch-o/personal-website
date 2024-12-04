@@ -6,7 +6,7 @@ import { IoSchool } from 'react-icons/io5';
 
 function Timeline() {
     return (
-        <div className='my-16'>
+        <div className="my-16">
             <VerticalTimeline lineColor="white">
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -20,10 +20,7 @@ function Timeline() {
                     <h3 className="vertical-timeline-element-title">
                         National University of Singapore (NUS)
                     </h3>
-                    <p>
-                        Currently a Year 3 Computer Science student pursuing a Bachelor of Computing
-                        in Computer Science with Honours degree.
-                    </p>
+                    <p>Currently a Year 3 Computer Science undergraduate.</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -37,10 +34,10 @@ function Timeline() {
                     <h3 className="vertical-timeline-element-title">
                         Nanyang Junior College (NYJC)
                     </h3>
-                    <p>Achieved 88.875 RP for A Levels.</p>
+                    <p>Achieved 88.875 RP for A Levels with 6 distinctions.</p>
                     <p>
-                        Was an active member of Nanyang Photographic Society (NYPS). Regularly
-                        served as a photographer for different school events.
+                        Served as a photographer for different school events under NYJC Photographic
+                        Society (NYPS) and also as an OGL for J1 Orientation 2019.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -55,12 +52,11 @@ function Timeline() {
                     <h3 className="vertical-timeline-element-title">
                         Zhonghua Secondary School (ZHSS)
                     </h3>
-                    <p>Achieved raw L1R5 of 7 points, net L1R5 of 3 points for O Levels.</p>
                     <p>
-                        Was appointed an AV team leader of the Infocomm Club, spearheading the
-                        management of the audio-visual system for major school events. Regularly
-                        participated in game making competitions.
+                        Achieved raw L1R5 of 7 points, net L1R5 of 3 points for O Levels with 9
+                        distinctions.
                     </p>
+                    <p>Served as a team leader in Infocomm Club.</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"

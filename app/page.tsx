@@ -48,8 +48,14 @@ function Home() {
                             <span ref={element} />{' '}
                         </h1>
 
-                        <p className="text-2xl mt-4 text-tokyo-night break-words">
-                            {' '}
+                        <p
+                            className="text-lg md:text-2xl mt-4 text-tokyo-night"
+                            style={{
+                                whiteSpace: 'normal',
+                                wordBreak: 'normal',
+                                overflowWrap: 'break-word',
+                            }}
+                        >
                             I am currently a Year 3 Computer Science student at NUS. I am passionate
                             about software engineering and cybersecurity.
                         </p>

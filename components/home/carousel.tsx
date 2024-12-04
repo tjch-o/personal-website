@@ -36,7 +36,7 @@ const DotCarousel = () => {
             <Box className="my-4" sx={{ minWidth: '50%' }}>
                 <Card variant="outlined" sx={{ boxShadow: '0 4px 8px rgba(255, 255, 255, 0.5)' }}>
                     <div className="p-4 text-center">
-                        <div className="flex space-x-4">
+                        <div className="flex flex-wrap sm:grid sm:grid-cols-2 md:grid-cols-2 lg:flex lg:space-x-4 lg:space-y-0">
                             {activeTechs.map((tech, key) => (
                                 <TechCard name={tech} key={key} />
                             ))}
@@ -56,8 +56,8 @@ const DotCarousel = () => {
                     ))}
                 </div>
 
-                <div className='flex justify-center my-4'>
-                <p className='text-tokyo-night text-xl'>{activeLabel}</p>
+                <div className="flex justify-center my-4">
+                    <p className="text-tokyo-night text-xl">{activeLabel}</p>
                 </div>
             </Box>
         </div>
