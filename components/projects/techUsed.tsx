@@ -19,7 +19,7 @@ const TechUsedCard = ({ techUsed, cardWidth }: TechUsedProps) => {
                         {techUsed.map((tech) => (
                             <Image
                                 key={tech}
-                                src={`/home/${tech}.svg`}
+                                src={`home/${tech.toLowerCase()}.svg`}
                                 alt={tech}
                                 height={50}
                                 width={50}
