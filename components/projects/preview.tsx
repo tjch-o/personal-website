@@ -1,7 +1,7 @@
 import React from 'react';
 import TechUsedCard from './techUsed';
-import VisitGithubButton from './visitGithubButton';
-import VisitSiteButton from './visitSiteButton';
+import VisitGithubButton from './visitGithub';
+import VisitSiteButton from './visitSite';
 
 interface PreviewProps {
     title: string;
