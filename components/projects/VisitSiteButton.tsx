@@ -5,11 +5,12 @@ import Link from 'next/link';
 
 interface VisitSiteButtonProps {
     href: string;
+    padding?: number;
 }
 
-function VisitSiteButton({ href }: VisitSiteButtonProps) {
+function VisitSiteButton({ href, padding = 16 }: VisitSiteButtonProps) {
     return (
-        <div className="mb-16">
+        <div className={`mb-${padding}`}>
             <Link href={href}>
                 <FaGlobeAmericas className="text-4xl text-tokyo-night-light" />
             </Link>

@@ -1,8 +1,8 @@
-import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import VisitGithubButton from '../VisitGithubButton';
+import React from 'react';
+import VisitGithubButton from '../visitGithubButton';
 import JobFestGoTechUsedCard from './JobFestGoTechUsedCard';
 
 function JobFestGoCard() {

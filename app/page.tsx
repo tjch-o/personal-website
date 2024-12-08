@@ -34,7 +34,7 @@ function Home() {
     }, []);
 
     return (
-        <div className="h-screen overflow-auto bg-tokyo-night">
+        <div className="h-screen overflow-auto bg-tokyo-night pt-16">
             <NavBar />
             <div className="flex justify-center p-8 bg-tokyo-night">
                 <div className="flex items-center space-x-16 max-w-7xl">

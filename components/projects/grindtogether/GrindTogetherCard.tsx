@@ -1,10 +1,10 @@
-import React from 'react';
-import GrindTogetherTechUsedCard from './GrindTogetherTechUsedCard';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import VisitGithubButton from '../VisitGithubButton';
-import VisitSiteButton from '../VisitSiteButton';
+import React from 'react';
+import VisitGithubButton from '../visitGithubButton';
+import VisitSiteButton from '../visitSiteButton';
+import GrindTogetherTechUsedCard from './GrindTogetherTechUsedCard';
 
 function GrindTogetherCard() {
     return (

@@ -4,11 +4,12 @@ import Link from 'next/link';
 
 interface VisitGithubButtonProps {
     href: string;
+    padding?: number;
 }
 
-function VisitGithubButton({ href }: VisitGithubButtonProps) {
+function VisitGithubButton({ href, padding = 16 }: VisitGithubButtonProps) {
     return (
-        <div className="mb-16">
+        <div className={`mb-${padding}`}>
             <Link href={href}>
                 <FaGithub className="text-4xl text-tokyo-night-light" />
             </Link>
