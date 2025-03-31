@@ -9,11 +9,11 @@ const techStacks = [
     },
     {
         label: 'Frontend',
-        stacks: ['HTML', 'CSS', 'Reactjs', 'TailwindCSS', 'Nextjs'],
+        stacks: ['HTML', 'CSS', 'Reactjs', 'TailwindCSS', 'Nextjs', 'Vuejs'],
     },
     {
         label: 'Backend',
-        stacks: ['Nodejs', 'Expressjs', 'PostgreSQL', 'MongoDB', 'Firebase', 'Docker', 'RabbitMQ'],
+        stacks: ['Nodejs', 'Expressjs', 'FastAPI', 'PostgreSQL', 'MongoDB', 'Firebase', 'Docker', 'RabbitMQ'],
     },
     {
         label: 'Machine Learning',
