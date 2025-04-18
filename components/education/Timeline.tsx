@@ -1,6 +1,26 @@
 import React, { useState } from 'react';
 
-const TimelineItem = ({ date, title, children, isExpanded, onToggle, colorClass, imageSrc, isLast }) => {
+interface TimelineItemProps {
+  date: string;
+  title: string;
+  children: React.ReactNode;
+  isExpanded: boolean;
+  onToggle: () => void;
+  colorClass: string;
+  imageSrc: string;
+  isLast: boolean;
+}
+
+interface TimelineDataItem {
+  id: string;
+  date: string;
+  title: string;
+  colorClass: string;
+  imageSrc: string;
+  content: React.ReactNode;
+}
+
+const TimelineItem = ({ date, title, children, isExpanded, onToggle, colorClass, imageSrc, isLast }: TimelineItemProps) => {
   return (
     <div className="relative pb-16 last:pb-0">
       {!isLast && (
@@ -49,16 +69,16 @@ const TimelineItem = ({ date, title, children, isExpanded, onToggle, colorClass,
 };
 
 const Timeline = () => {
-  const [expandedItems, setExpandedItems] = useState({});
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
   
-  const toggleItem = (id) => {
+  const toggleItem = (id: string) => {
     setExpandedItems(prev => ({
       ...prev,
       [id]: !prev[id]
     }));
   };
   
-  const timelineData = [
+  const timelineData: TimelineDataItem[] = [
     {
       id: 'nus',
       date: "August 2022 - Present",
