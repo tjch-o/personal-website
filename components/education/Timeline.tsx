@@ -31,7 +31,7 @@ const TimelineItem = ({ date, title, children, isExpanded, onToggle, colorClass,
         <img 
           src={imageSrc} 
           alt={title} 
-          className="w-16 h-16 object-contain"
+          className="w-12 h-12 object-contain"
         />
       </div>
       
