@@ -29,13 +29,13 @@ const ExperienceCard = ({
 }: ExperienceCardProps) => {
     return (
         <div className="flex justify-center">
-            <div className="bg-white shadow-[0px_4px_20px_4px_rgba(50,100,150,0.5)] rounded-lg p-6 max-w-3xl relative">
+            <div className="bg-white shadow-[0px_4px_20px_4px_rgba(50,100,150,0.5)] rounded-lg p-6 max-w-[840px] relative">
                 <div className="absolute top-4 right-4">
                     <VisitSiteButton href={siteLink} padding={4} />
                 </div>
-                <h1 className="text-2xl font-bold m-0">{company}</h1>
+                <h1 className="text-xl font-bold m-0">{company}</h1>
                 <div className="flex flex-row justify-start items-center space-x-6">
-                    <h3 className="text-lg m-0">{role}</h3>
+                    <h3 className="text-lg m-0 font-inter">{role}</h3>
                     <div className="flex flex-row items-center space-x-4 ml-4">
                         <DateDisplay start={startDate} end={endDate} />
                     </div>

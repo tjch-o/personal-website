@@ -29,8 +29,13 @@ const config: Config = {
             listStyleType: {
                 square: 'square',
             },
+            fontFamily: {
+                inter: ['var(--font-inter)', 'sans-serif'],
+                'fira-sans': ['var(--font-fira-sans)', 'sans-serif'],
+            }
         },
     },
     plugins: [],
 };
+
 export default config;

@@ -17,7 +17,7 @@ interface TimelineDataItem {
   title: string;
   colorClass: string;
   imageSrc: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
 }
 
 const TimelineItem = ({ date, title, children, isExpanded, onToggle, colorClass, imageSrc, isLast }: TimelineItemProps) => {
@@ -57,7 +57,7 @@ const TimelineItem = ({ date, title, children, isExpanded, onToggle, colorClass,
           </div>
           
           <div className={`overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-96' : 'max-h-[1.5rem] line-clamp-1'}`}>
-            <div className="text-gray-600">
+            <div className="text-gray-600 font-inter">
               {children}
             </div>
           </div>
@@ -125,9 +125,6 @@ const Timeline = () => {
       title: "Rosyth School",
       colorClass: "border-cyan-500",
       imageSrc: "/education/rosyth.png",
-      content: (
-        <p>Primary education with focus on foundational academic skills.</p>
-      )
     }
   ];
 

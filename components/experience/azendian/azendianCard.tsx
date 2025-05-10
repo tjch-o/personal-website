@@ -1,5 +1,4 @@
 import Card from '../card';
-import Description from '../description';
 
 const AzendianCard = () => {
     const url = 'https://azendian.com/';
@@ -15,8 +14,8 @@ const AzendianCard = () => {
         <Card
             company={'Azendian Solutions'}
             role="Full-stack Developer Intern"
-            startDate="05-13-2024"
-            endDate="08-02-2024"
+            startDate="13 May 2024"
+            endDate="2 August 2024"
             techUsed={techStack}
             description={desc}
             siteLink={url}

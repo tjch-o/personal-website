@@ -1,9 +1,23 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { Inter, Fira_Sans } from "next/font/google"
 import type { Metadata } from 'next';
 
 // These styles apply to every route in the application
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const firaSans = Fira_Sans({  
+  weight: ['400', '500', '700'],  // Choose the weights you need
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-fira-sans',
+});
 
 export const metadata: Metadata = {
     title: 'Choo Tze Jie',
@@ -12,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        <html lang="en" className={`${inter.variable} ${firaSans.variable}`}>
             <Head>
                 <meta charSet="utf-8" />
                 <link rel="icon" href="/favicon.ico" />
