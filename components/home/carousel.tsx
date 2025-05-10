@@ -1,8 +1,13 @@
-import { Box, Card } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import TechCard from './techCard';
 
-const techStacks = [
+interface TechStack {
+    label: string;
+    stacks: string[];
+}
+
+const techStacks: TechStack[] = [
     {
         label: 'Programming Languages',
         stacks: ['Python', 'Java', 'JavaScript', 'TypeScript', 'C'],
@@ -13,7 +18,17 @@ const techStacks = [
     },
     {
         label: 'Backend',
-        stacks: ['Nodejs', 'Expressjs', 'FastAPI', 'PostgreSQL', 'MongoDB', 'Firebase', 'Docker', 'RabbitMQ'],
+        stacks: [
+            'Nodejs',
+            'Expressjs',
+            'FastAPI',
+            'PostgreSQL',
+            'MongoDB',
+            'Firebase',
+            'Docker',
+            'RabbitMQ',
+            'Redis',
+        ],
     },
     {
         label: 'Machine Learning',
@@ -23,26 +38,102 @@ const techStacks = [
 
 const DotCarousel = () => {
     const [activeIndex, setActiveIndex] = useState<number>(0);
-
-    const handleDotClick = (index: number) => {
-        setActiveIndex(index);
-    };
+    const [scrollPosition, setScrollPosition] = useState<number>(0);
+    const carouselRef = useRef<HTMLDivElement>(null);
 
     const activeTechs = techStacks[activeIndex].stacks;
     const activeLabel = techStacks[activeIndex].label;
 
+    const handleDotClick = (index: number) => {
+        setActiveIndex(index);
+        setScrollPosition(0);
+    };
+
+    const scroll = (direction: 'left' | 'right') => {
+        const container = carouselRef.current;
+        if (!container) return;
+
+        const scrollAmount = 200;
+        const newPosition =
+            direction === 'left'
+                ? Math.max(0, scrollPosition - scrollAmount)
+                : Math.min(
+                      container.scrollWidth - container.clientWidth,
+                      scrollPosition + scrollAmount
+                  );
+
+        container.scrollTo({
+            left: newPosition,
+            behavior: 'smooth',
+        });
+
+        setScrollPosition(newPosition);
+    };
+
+    const [showScrollButtons, setShowScrollButtons] = useState<boolean>(false);
+
+    useEffect(() => {
+        const checkOverflow = () => {
+            if (carouselRef.current) {
+                const isOverflowing =
+                    carouselRef.current.scrollWidth > carouselRef.current.clientWidth;
+                setShowScrollButtons(isOverflowing);
+            }
+        };
+
+        checkOverflow();
+        window.addEventListener('resize', checkOverflow);
+        return () => window.removeEventListener('resize', checkOverflow);
+    }, [activeIndex, activeTechs]);
+
     return (
         <div className="flex justify-center">
-            <Box className="my-4" sx={{ minWidth: '50%' }}>
-                <Card variant="outlined" sx={{ boxShadow: '0 4px 8px rgba(255, 255, 255, 0.5)' }}>
-                    <div className="p-4 text-center">
-                        <div className="flex flex-wrap sm:grid sm:grid-cols-2 md:grid-cols-2 lg:flex lg:space-x-4 lg:space-y-0">
-                            {activeTechs.map((tech, key) => (
-                                <TechCard name={tech} key={key} />
-                            ))}
+            <div className="my-4 w-full max-w-3xl">
+                <div className="border rounded-lg shadow-lg bg-white">
+                    <div className="p-4 text-center relative">
+                        {showScrollButtons && (
+                            <button
+                                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 rounded-full p-1 shadow"
+                                onClick={() => scroll('left')}
+                                disabled={scrollPosition <= 0}
+                            >
+                                <ChevronLeft size={24} />
+                            </button>
+                        )}
+
+                        <div
+                            ref={carouselRef}
+                            className="flex overflow-x-auto py-2"
+                            style={{
+                                scrollBehavior: 'smooth',
+                                scrollbarWidth: 'none',
+                            }}
+                        >
+                            <div className="flex space-x-4 px-8">
+                                {activeTechs.map((tech, index) => (
+                                    <div key={index} className="flex-shrink-0">
+                                        <TechCard name={tech} key={index} />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
+
+                        {showScrollButtons && (
+                            <button
+                                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 rounded-full p-1 shadow"
+                                onClick={() => scroll('right')}
+                                disabled={
+                                    carouselRef.current &&
+                                    scrollPosition >=
+                                        carouselRef.current.scrollWidth -
+                                            carouselRef.current.clientWidth
+                                }
+                            >
+                                <ChevronRight size={24} />
+                            </button>
+                        )}
                     </div>
-                </Card>
+                </div>
 
                 <div className="flex justify-center mt-4">
                     {techStacks.map((_, index) => (
@@ -57,9 +148,9 @@ const DotCarousel = () => {
                 </div>
 
                 <div className="flex justify-center my-4">
-                    <p className="text-tokyo-night text-xl">{activeLabel}</p>
+                    <p className="text-xl text-white">{activeLabel}</p>
                 </div>
-            </Box>
+            </div>
         </div>
     );
 };

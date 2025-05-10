@@ -8,7 +8,7 @@ const IrasCard = () => {
         'Built FastAPI backend, integrating it with MongoDB in Azure CosmosDB and OpenAI GPT-4o model',
         'Optimised backend performance and cost-efficiency by implementing Redis caching, MongoDB indexes and rate limiting',
         'Built frontend in Vue.js and Tailwind, implementing interactive drag-and-drop classification, analytics and history tracking',
-        'Designed and implemented MongoDB aggregation pipelines for real-time analytics'
+        'Designed and implemented MongoDB aggregation pipelines for real-time analytics',
     ];
     return (
         <Card
