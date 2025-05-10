@@ -123,7 +123,7 @@ const DotCarousel = () => {
                                 className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 rounded-full p-1 shadow"
                                 onClick={() => scroll('right')}
                                 disabled={
-                                    carouselRef.current &&
+                                    !carouselRef.current ||
                                     scrollPosition >=
                                         carouselRef.current.scrollWidth -
                                             carouselRef.current.clientWidth
